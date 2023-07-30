@@ -30,7 +30,7 @@
 
 //--------(2) Topic: Filter Even Numbers------------
 
-// var num = [10,20,30,40,50,60,75,87,93,100];
+// var num = [10,20,30,38,35,40,50,56,60,75,87,93,100];
 // var result = num.filter(function(item){
 //    return item % 2 === 0;
 // });
@@ -48,34 +48,26 @@
 
 //---------(4) Topic: Grade Calculator----------
 
-// function calculateGrade(){
-//  var Marks = prompt();
-//  switch(true){
-//     case(Marks<=100 && Marks>=80):
-//         console.log('A+');
-//     break;
+function calculateGrade(){
+ var Marks = prompt();
+ switch(true){
+    case(Marks<=100 && Marks>=90):
+        console.log('A');
+    break;
 
-//     case(Marks<80 && Marks>=70):
-//          console.log('A');
-//     break;
+    case(Marks<90 && Marks>=80):
+         console.log('B');
+    break;
     
-//     case(Marks<70 && Marks>=60):
-//          console.log('A-');
-//     break;
+    case(Marks<80 && Marks>=70):
+         console.log('C');
+    break;
 
-//     case(Marks<60 && Marks>=50):
-//          console.log('B');
-//     break;
+    case(Marks<70 && Marks>=60):
+         console.log('D');
+    break;
 
-//     case(Marks<50 && Marks>=40): 
-//          console.log('C');
-//     break;
-
-//     case(Marks<40 && Marks>=33):
-//          console.log('D');
-//     break;
-
-//     default: console.log('F')
-//   }
-// }
-// calculateGrade();
+    default: console.log('F')
+  }
+}
+calculateGrade();
